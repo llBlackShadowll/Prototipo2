@@ -1,0 +1,104 @@
+<resources>
+    <!-- App General -->
+    <string name="app_name">Prototipo</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Menú del Drawer -->
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Servicios -->
+    <string name="lavado_vehiculos">Lavado de Vehículos</string>
+    <string name="servicios_especiales">Servicios Especiales</string>
+    <string name="mecanica">Mecánica</string>
+    <string name="otros_lavados">Otros Lavados</string>
+
+    <!-- Opciones de Lavado -->
+    <string name="lavado_express">Lavado Express</string>
+    <string name="lavado_economico">Lavado Económico</string>
+    <string name="lavado_ejecutivo">Lavado Ejecutivo</string>
+    <string name="lavado_interior">Lavado Interior</string>
+    <string name="lavado_completo">Lavado Completo</string>
+
+    <!-- Opciones Servicios Especiales -->
+    <string name="pulido_orbital">Pulido Orbital</string>
+    <string name="aplicacion_cera">Aplicación de Cera Especial</string>
+    <string name="protector_cuero">Protector de Cuero</string>
+    <string name="undercoating">Undercoating</string>
+
+    <!-- Opciones Mecánica -->
+    <string name="cambio_aceite">Cambio de Aceite y Filtro</string>
+    <string name="afinamiento_completo">Afinamiento Completo</string>
+    <string name="planchado_pintura">Planchado y Pintura</string>
+    <string name="reajuste_carroceria">Reajuste de Carrocería</string>
+
+    <!-- Opciones Otros Lavados -->
+    <string name="lavado_coches_bebe">Lavado de Coches de Bebé</string>
+    <string name="lavado_moto">Lavado de Moto</string>
+    <string name="lavado_alfombra">Lavado de Alfombra</string>
+    <string name="lavado_asientos">Lavado de Asientos</string>
+    <string name="lavado_tablero">Lavado de Tablero, Timón y Consola</string>
+    <string name="lavado_techo">Lavado de Techo</string>
+    <string name="otro_lavado">Otro Lavado</string>
+
+    <!-- Barra de Navegación -->
+    <string name="inicio">Inicio</string>
+    <string name="reserva">Reserva</string>
+    <string name="salir">Salir</string>
+    <string name="menu">Menú</string>
+
+    <!-- Reserva -->
+    <string name="reservar_cita">Reservar Cita</string>
+    <string name="selecciona_servicio">Selecciona un servicio:</string>
+    <string name="selecciona_opcion">Selecciona una opción:</string>
+    <string name="selecciona_dia">Selecciona el día:</string>
+    <string name="selecciona_hora">Selecciona la hora:</string>
+    <string name="reservar">RESERVAR</string>
+
+    <!-- Servicios -->
+    <string-array name="servicios">
+        <item>Lavado de Vehículos</item>
+        <item>Servicios Especiales</item>
+        <item>Mecánica</item>
+        <item>Otros Lavados</item>
+    </string-array>
+
+    <!-- Opciones -->
+    <string-array name="opciones_lavado_vehiculos">
+        <item>Lavado Express</item>
+        <item>Lavado Económico</item>
+        <item>Lavado Ejecutivo</item>
+        <item>Lavado Interior</item>
+        <item>Lavado Completo</item>
+    </string-array>
+
+    <string-array name="opciones_servicios_especiales">
+        <item>Pulido Orbital</item>
+        <item>Aplicación de Cera Especial</item>
+        <item>Protector de Cuero</item>
+        <item>Undercoating</item>
+    </string-array>
+
+    <string-array name="opciones_mecanica">
+        <item>Cambio de Aceite y Filtro</item>
+        <item>Afinamiento Completo</item>
+        <item>Planchado y Pintura</item>
+        <item>Reajuste de Carrocería</item>
+    </string-array>
+
+    <string-array name="opciones_otros_lavados">
+        <item>Lavado de Coches de Bebé</item>
+        <item>Lavado de Moto</item>
+        <item>Lavado de Alfombra</item>
+        <item>Lavado de Asientos</item>
+        <item>Lavado de Tablero, Timón y Consola</item>
+        <item>Lavado de Techo</item>
+        <item>Otro Lavado</item>
+    </string-array>
+</resources>

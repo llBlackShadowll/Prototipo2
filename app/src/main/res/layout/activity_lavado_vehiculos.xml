@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloLavado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPCIONES DE LAVADO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Lavado Expreso -->
+    <ImageView
+        android:id="@+id/imgLavadoExpreso"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/lavado_express"
+        android:src="@drawable/ic_vehicle_wash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloLavado" />
+
+    <TextView
+        android:id="@+id/tvLavadoExpresoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lavado Expreso"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/imgLavadoExpreso"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoExpreso"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvLavadoExpreso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Precio:\nAutos: S/ 80.00\nCamionetas: S/ 100.00"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvLavadoExpresoNombre"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoExpreso"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnLavadoExpreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUE INCLUYE"
+        android:textSize="12sp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvLavadoExpreso"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoExpreso"
+        android:layout_marginTop="8dp" />
+
+    <!-- Lavado Económico -->
+    <ImageView
+        android:id="@+id/imgLavadoEconomico"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/lavado_economico"
+        android:src="@drawable/ic_vehicle_wash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLavadoExpreso" />
+
+    <TextView
+        android:id="@+id/tvLavadoEconomicoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lavado Económico"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/imgLavadoEconomico"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoEconomico"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvLavadoEconomico"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Precio:\nAutos: S/ 110.00\nCamionetas: S/ 130.00"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvLavadoEconomicoNombre"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoEconomico"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnLavadoEconomico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUE INCLUYE"
+        android:textSize="12sp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvLavadoEconomico"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoEconomico"
+        android:layout_marginTop="8dp" />
+
+    <!-- Lavado Ejecutivo -->
+    <ImageView
+        android:id="@+id/imgLavadoEjecutivo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/lavado_ejecutivo"
+        android:src="@drawable/ic_vehicle_wash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLavadoEconomico" />
+
+    <TextView
+        android:id="@+id/tvLavadoEjecutivoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lavado Ejecutivo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/imgLavadoEjecutivo"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoEjecutivo"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvLavadoEjecutivo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Precio:\nAutos: S/ 240.00\nCamionetas: S/ 280.00"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvLavadoEjecutivoNombre"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoEjecutivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnLavadoEjecutivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUE INCLUYE"
+        android:textSize="12sp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvLavadoEjecutivo"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoEjecutivo"
+        android:layout_marginTop="8dp" />
+
+    <!-- Lavado Interior -->
+    <ImageView
+        android:id="@+id/imgLavadoInterior"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/lavado_interior"
+        android:src="@drawable/ic_vehicle_wash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLavadoEjecutivo" />
+
+    <TextView
+        android:id="@+id/tvLavadoInteriorNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lavado Interior"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/imgLavadoInterior"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoInterior"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvLavadoInterior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Precio:\nAutos: S/ 260.00\nCamionetas: S/ 295.00"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvLavadoInteriorNombre"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoInterior"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnLavadoInterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUE INCLUYE"
+        android:textSize="12sp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvLavadoInterior"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoInterior"
+        android:layout_marginTop="8dp" />
+
+    <!-- Lavado Completo -->
+    <ImageView
+        android:id="@+id/imgLavadoCompleto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/lavado_completo"
+        android:src="@drawable/ic_vehicle_wash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLavadoInterior" />
+
+    <TextView
+        android:id="@+id/tvLavadoCompletoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lavado Completo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/imgLavadoCompleto"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoCompleto"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tvLavadoCompleto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Precio:\nAutos: S/ 300.00\nCamionetas: S/ 350.00"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvLavadoCompletoNombre"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoCompleto"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnLavadoCompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUE INCLUYE"
+        android:textSize="12sp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvLavadoCompleto"
+        app:layout_constraintStart_toEndOf="@id/imgLavadoCompleto"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permiso para acceder a Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-- Login Activity (punto de entrada principal) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Activity -->
+        <activity android:name=".RegisterActivity" />
+
+        <!-- Register Success Activity -->
+        <activity android:name=".RegisterSuccessActivity" />
+
+        <!-- Forgot Password Activity -->
+        <activity android:name=".ForgotPasswordActivity" />
+
+        <!-- Password Reset Sent Activity -->
+        <activity android:name=".PasswordResetSentActivity" />
+
+        <!-- Main Activity -->
+        <activity android:name=".MainActivity" />
+
+        <!-- Reserva Activity -->
+        <activity android:name=".ReservaActivity" />
+
+    </application>
+
+</manifest>

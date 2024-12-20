@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lavado Expreso"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incluye:\n• Aspirado de Asientos\n• Aspirado de Alfombras\n• Aspirado de Maleteras\n• Limpieza de Puertas y Tablero\n• Lavado de Carrocería con Shampoo\n• Silicona a las llantas\n• Encerado con cera de color\n• Perfumado de Salón"
+        android:textSize="16sp" />
+</LinearLayout>

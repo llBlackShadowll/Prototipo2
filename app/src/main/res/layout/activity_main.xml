@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Contenido Principal -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sectionMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <!-- Botón Hamburger -->
+        <ImageView
+            android:id="@+id/imgHamburger"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_hamburger"
+            android:contentDescription="@string/menu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_placeholder_carwash"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Texto: NUESTROS TRABAJOS -->
+        <TextView
+            android:id="@+id/tvNuestrosTrabajos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUESTROS TRABAJOS"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/imgLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- ViewPager2 para el carrusel -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNuestrosTrabajos" />
+
+        <!-- Sección de Íconos -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/viewPager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp">
+
+            <!-- Ícono Lavado de Vehículos -->
+            <ImageView
+                android:id="@+id/imgLavadoVehiculos"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="70dp"
+                android:contentDescription="@string/lavado_vehiculos"
+                android:src="@drawable/ic_vehicle_wash"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLavadoVehiculos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lavado_vehiculos"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/imgLavadoVehiculos"
+                app:layout_constraintStart_toStartOf="@id/imgLavadoVehiculos"
+                app:layout_constraintEnd_toEndOf="@id/imgLavadoVehiculos"
+                android:layout_marginTop="8dp" />
+
+            <!-- Ícono Servicios Especiales -->
+            <ImageView
+                android:id="@+id/imgServiciosEspeciales"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="70dp"
+                android:contentDescription="@string/servicios_especiales"
+                android:src="@drawable/ic_special_services"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvServiciosEspeciales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/servicios_especiales"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/imgServiciosEspeciales"
+                app:layout_constraintStart_toStartOf="@id/imgServiciosEspeciales"
+                app:layout_constraintEnd_toEndOf="@id/imgServiciosEspeciales"
+                android:layout_marginTop="8dp" />
+
+            <!-- Ícono Mecánica -->
+            <ImageView
+                android:id="@+id/imgMecanica"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/mecanica"
+                android:src="@drawable/ic_mechanic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgLavadoVehiculos" />
+
+            <TextView
+                android:id="@+id/tvMecanica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mecanica"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/imgMecanica"
+                app:layout_constraintStart_toStartOf="@id/imgMecanica"
+                app:layout_constraintEnd_toEndOf="@id/imgMecanica"
+                android:layout_marginTop="8dp" />
+
+            <!-- Ícono Otros Lavados -->
+            <ImageView
+                android:id="@+id/imgOtrosLavados"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="70dp"
+                android:contentDescription="@string/otros_lavados"
+                android:src="@drawable/ic_other_washes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgServiciosEspeciales" />
+
+            <TextView
+                android:id="@+id/tvOtrosLavados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otros_lavados"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/imgOtrosLavados"
+                app:layout_constraintStart_toStartOf="@id/imgOtrosLavados"
+                app:layout_constraintEnd_toEndOf="@id/imgOtrosLavados"
+                android:layout_marginTop="8dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- NavigationView -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/drawer_header" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

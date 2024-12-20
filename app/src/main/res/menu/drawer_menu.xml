@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_inicio"
+        android:icon="@drawable/ic_home"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/menu_reserva"
+        android:icon="@drawable/ic_reserva"
+        android:title="Reserva" />
+
+    <item
+        android:id="@+id/menu_salir"
+        android:icon="@drawable/ic_logout"
+        android:title="Salir" />
+
+</menu>
